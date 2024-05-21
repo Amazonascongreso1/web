@@ -9,12 +9,14 @@ header {
     background-color: #a6bd93;  
     text-align: center;
     height: 130px;
+    display: flex;
+    align-items: center;
 }
 .logo-container{
     width: 20%;
-    display: flex;
-    position: absolute
+
 }
+
 #logo{
     display: flex;
     border-top-right-radius: 80%;
@@ -69,13 +71,13 @@ article{
 }
 
 h1{
-    background: green;
+    background: #a6bd93;
     color: white;
     text-align: center;
     padding: 15px;
 }
 h2{
-    background:  green;
+    background: #a6bd93;
     color: white;
     text-align: center;
     padding: 15px;
@@ -127,3 +129,25 @@ width: 20%;
     text-align: end;
 }
 
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .tematicas h1{
+        width: 100%;
+    }
+        .tematicas{
+            display: flex;
+        flex-wrap: wrap;
+    }
+    .tematicas article{
+        width: 50%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
